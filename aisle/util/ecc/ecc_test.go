@@ -14,8 +14,8 @@ import (
 func TestT(t *testing.T) {
 	key := GenerateKey()
 	pubKey := key.GeneratePublicKey()
-	fmt.Println(pubKey.ConvertToString())
-	fmt.Println(key.ConvertToString())
+	fmt.Println(pubKey.ConvertToBytes())
+	fmt.Println(key.ConvertToBytes())
 
 	eData, err := pubKey.Encrypt([]byte("test"))
 	if err != nil {
