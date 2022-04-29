@@ -4,3 +4,7 @@
  */
 
 package aisle
+
+func NewServer() *Server {
+	return &Server{}
+}
